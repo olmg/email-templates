@@ -1,15 +1,47 @@
 // These are the styles to make some of the templates look extra nice.
 // Feel free to remove these styles for production!
 
+// Colors
+$odyssey-orange: #eb8e4e;
+$odyssey-orange--hover: transparentize($odyssey-orange, .8);
+$odyssey-black: rgba(0, 0, 0, 0.95);
+$odyssey-white: #ffffff;
+$odyssey-grey: #58585a;
+$odyssey-light-grey: #cfcfcf;
+$odyssey-green: #27ae60;
+$odyssey-red: #C8564B;
+$odyssey-blue: #3498db;
+$odyssey-yellow: #F4CB47;
+// $body-background: #F1F1F1;
+$body-background: $odyssey-white;
+$odyssey-purple: #764CA2;
+$odyssey-orange-muted: #e67e22;
+$odyssey-blue-grey: #34495e;
+$odyssey-turquoise: #1abc9c;
+$debug: fuchsia;
+
+//Social Media Brand Colors
+$social-facebook: #3b5998;
+$social-pinterest: #bd081c;
+$social-stumbleupon: #E94B35;
+$social-reddit: #FF4500;
+$social-tumblr: #323E4D;
+$social-twitter: #55acee;
+$social-stumbleupon: #FF2B28;
+$social-instagram: $odyssey-black;
+$social-snapchat: #FFFC00;
+$social-linkedin: #0077B5;
+$social-google: #DB3236;
+
 // Body Styles 
 body,
 html, 
 .body {
-  background: #f3f3f3 !important;
+  background: $odyssey-white !important;
 }
 
 .container.header {
-  background: #f3f3f3;
+  background: white;
 }
 
 .body-drip {
@@ -18,16 +50,17 @@ html,
 
 // Full Width Headers
 .header {
-  background: #8a8a8a;
+  background: white;
+  border-bottom: 1px solid $odyssey-light-grey;
 }
 
 .header .columns {
   padding-bottom: 0;
 }
 
-.header p {
-  color: #fff;
+.header h3 {
   padding-top: 15px;
+  font-family: "Abril Fatface", "Georgia", "Times New Roman", serif;
 }
 
 .header .wrapper-inner {
@@ -40,20 +73,49 @@ html,
 
 // Social Media
 table.button.facebook table td {
-  background: #3B5998 !important;
-  border-color: #3B5998;
+  background: $social-facebook !important;
+  border-color: $social-facebook;
 }
 
 table.button.twitter table td {
-  background: #1daced !important;
-  border-color: #1daced;
+  background: $social-twitter !important;
+  border-color: $social-twitter;
 }
 
 table.button.google table td {
-  background: #DB4A39 !important;
-  border-color: #DB4A39;
+  background: $social-google !important;
+  border-color: $social-google;
+}
+
+table.button.instagram table td {
+  background: $social-instagram !important;
+  border-color: $social-instagram;
+}
+
+table.button.linkedin table td {
+  background: $social-linkedin !important;
+  border-color: $social-linkedin;
+}
+
+table.button.snapchat table td {
+  background: $social-snapchat !important;
+  border-color: $social-snapchat;
+  
+  a {
+    color: black !important;
+  }
 }
 
 .wrapper.secondary {
-  background: #f3f3f3;
+  background: $odyssey-white;
+  border-top: 1px solid $odyssey-light-grey;
+}
+
+.footer-header {
+  font-size: 14px;
+}
+
+.footer-copyright {
+  font-size: 12px;
+  color: $odyssey-grey;
 }
