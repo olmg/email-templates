@@ -33,6 +33,11 @@ $social-snapchat: #FFFC00;
 $social-linkedin: #0077B5;
 $social-google: #DB3236;
 
+// Typography
+$font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-heading: Abril Fatface, Georgia, -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Helvetica, Arial, sans-serif;
+$font-family-serif: Georgia, Times, "Times New Roman", serif;
+
 // Body Styles 
 body,
 html, 
@@ -60,7 +65,7 @@ html,
 
 .header h3 {
   padding-top: 15px;
-  font-family: "Abril Fatface", "Georgia", "Times New Roman", serif;
+  font-family: $font-family-heading;
 }
 
 .header .wrapper-inner {
@@ -69,6 +74,12 @@ html,
 
 .header .container {
   background: transparent;
+}
+
+.container {
+  .lead {
+    font-family: $font-family-serif;
+  }
 }
 
 // Social Media
