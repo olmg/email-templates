@@ -1,8 +1,12 @@
 ---
-subject: Biweekly Odyssey Creator Stats
+subject: Weekly Odyssey Creator Stats
 name: Courtney
 pageviews: "1.2m"
 engagements: "30.3k"
+post: 
+  headline: "What Nobody Is Going To Tell You About Freshman Year"
+  pageviews: "1.3m"
+  engagements: "210.8k"
 ---
 
 <wrapper class="header">
@@ -40,5 +44,17 @@ engagements: "30.3k"
       <p>Social Engagements</p>
     </columns>    
   </row>
+  <wrapper class="secondary">
+    <h3 class="secondary-header">Top Articles</h3>
+    <row class="collapse">
+      <h5 class="article-title">{{ post.headline }}</h5>
+      <columns small="6" class="article-title">
+        <p>{{ post.pageviews }} <span class="article-label">page views</span> </p>
+      </columns>
+      <columns small="6">
+        <p>{{ post.engagements }} <span class="article-label">social engagements</span></p>
+      </columns>
+    </row>
+  </wrapper>
   {{> footer }}
 </container>
