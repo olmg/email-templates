@@ -1,4 +1,25 @@
 .stats {
   font-size: 40px;
+  margin-bottom: 0;
+  
+  &-label {
+    color: $odyssey-grey;
+    font-size: 14px;
+  }
 }
 
+.section-header {
+  font-weight: bold;
+  padding-top: 32px;
+  border-top: 1px solid $odyssey-light-grey;
+}
+
+
+.article-title {
+  margin-bottom: 4px !important;
+}
+
+.article-label {
+  font-size: 10px;
+  color: $odyssey-grey;
+}

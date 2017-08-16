@@ -1,8 +1,12 @@
 ---
-subject: Biweekly Odyssey Creator Stats
+subject: Weekly Odyssey Creator Stats
 name: Courtney
 pageviews: "1.2m"
 engagements: "30.3k"
+post: 
+  headline: "What Nobody Is Going To Tell You About Freshman Year"
+  pageviews: "1.3m"
+  engagements: "210.8k"
 ---
 
 <wrapper class="header">
@@ -25,20 +29,63 @@ engagements: "30.3k"
   <row>
     <columns small="12">
       <h1>Hi, {{ name }}</h1>
-      <p class="lead">Here are your biweekly stats to stay on top of how your posts are doing on Odyssey.</p>
+      <p class="lead">Here are your weekly stats to stay on top of how your posts are doing on Odyssey.</p>
     </columns>
   </row>
   
-  <row>
+  <row class="collapse">
+    <h2 class="section-header">Since last week</h2>
     <columns small="6">
       <h2 class="stats">{{ pageviews }}</h2>
-      <p>Page Views</p>
+      <p class="stats-label">Page Views</p>
     </columns>    
 
     <columns small="6">
       <h2 class="stats">{{ engagements }}</h2>
-      <p>Social Engagements</p>
+      <p class="stats-label">Social Engagements</p>
     </columns>    
   </row>
+  <h5 class="secondary-header">Top Articles</h5>
+  
+  <ol>
+    <li>
+      <row class="collapse">
+        <h6 class="article-title"><a>{{ post.headline }}</a></h6>
+        <columns small="6" class="article-title">
+          <p>{{ post.pageviews }} <span class="article-label">page views</span> </p>
+        </columns>
+        <columns small="6">
+          <p>{{ post.engagements }} <span class="article-label">social engagements</span></p>
+        </columns>
+      </row>
+    </li>
+  </ol>
+
+  <row class="collapse">
+    <h2 class="section-header">Lifetime</h2>
+    <columns small="6">
+      <h2 class="stats">{{ pageviews }}</h2>
+      <p class="stats-label">Page Views</p>
+    </columns>    
+
+    <columns small="6">
+      <h2 class="stats">{{ engagements }}</h2>
+      <p class="stats-label">Social Engagements</p>
+    </columns>    
+  </row>
+  <h5 class="secondary-header">Top Articles</h5>
+  <ol>
+    <li>
+      <row class="collapse">
+        <h6 class="article-title"><a href="">{{ post.headline }}</a></h6>
+        <columns small="6" class="article-title">
+          <p>{{ post.pageviews }} <span class="article-label">page views</span> </p>
+        </columns>
+        <columns small="6">
+          <p>{{ post.engagements }} <span class="article-label">social engagements</span></p>
+        </columns>
+      </row>
+    </li>
+  </ol>
   {{> footer }}
 </container>
