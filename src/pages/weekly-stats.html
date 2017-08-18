@@ -3,7 +3,7 @@ subject: Weekly Odyssey Creator Stats
 name: Courtney
 pageviews: "1.2m"
 engagements: "30.3k"
-post: 
+post:
   headline: "What Nobody Is Going To Tell You About Freshman Year"
   pageviews: "1.3m"
   engagements: "210.8k"
@@ -25,67 +25,130 @@ post:
 <container>
 
   <spacer size="16"></spacer>
-  
+
   <row>
     <columns small="12">
-      <h1>Hi, {{ name }}</h1>
+      <h1>Hi, {{{{raw}}}} {{ firstName }} {{{{/raw}}}}</h1>
       <p class="lead">Here are your weekly stats to stay on top of how your posts are doing on Odyssey.</p>
     </columns>
   </row>
-  
+
   <row class="collapse">
     <h2 class="section-header">Since last week</h2>
+  </row>
+  <row class="collapse">
     <columns small="6">
-      <h2 class="stats">{{ pageviews }}</h2>
+      <h2 class="stats">{{{{raw}}}} {{ temporalViews }} {{{{/raw}}}}</h2>
       <p class="stats-label">Page Views</p>
-    </columns>    
+    </columns>
 
     <columns small="6">
-      <h2 class="stats">{{ engagements }}</h2>
+      <h2 class="stats">{{{{raw}}}} {{ temporalEngagements }} {{{{/raw}}}}</h2>
       <p class="stats-label">Social Engagements</p>
-    </columns>    
+    </columns>
   </row>
+  {{{{raw}}}}{{#if temporalArticle1Headline }}{{{{/raw}}}}
   <h5 class="secondary-header">Top Articles</h5>
-  
+  {{{{raw}}}}{{/if}}{{{{/raw}}}}
   <ol>
+    {{{{raw}}}}{{#if temporalArticle1Headline }}{{{{/raw}}}}
     <li>
+      <h6 class="article-title"><a href="{{{{raw}}}}{{{temporalArticle1Link}}}{{{{/raw}}}}">{{{{raw}}}} {{ temporalArticle1Headline }} {{{{/raw}}}}</a></h6>
       <row class="collapse">
-        <h6 class="article-title"><a>{{ post.headline }}</a></h6>
         <columns small="6" class="article-title">
-          <p>{{ post.pageviews }} <span class="article-label">page views</span> </p>
+          <p>{{{{raw}}}} {{ temporalArticle1Views }} {{{{/raw}}}} <span class="article-label">page views</span> </p>
         </columns>
         <columns small="6">
-          <p>{{ post.engagements }} <span class="article-label">social engagements</span></p>
+          <p>{{{{raw}}}} {{ temporalArticle1Engagements }} {{{{/raw}}}}<span class="article-label">social engagements</span></p>
         </columns>
       </row>
     </li>
+    {{{{raw}}}}{{/if}}{{{{/raw}}}}
+    {{{{raw}}}}{{#if temporalArticle2Headline }}{{{{/raw}}}}
+    <li>
+      <h6 class="article-title"><a href="{{{{raw}}}}{{{temporalArticle2Link}}}{{{{/raw}}}}">{{{{raw}}}} {{ temporalArticle2Headline }} {{{{/raw}}}}</a></h6>
+      <row class="collapse">
+        <columns small="6" class="article-title">
+          <p>{{{{raw}}}} {{ temporalArticle2Views }} {{{{/raw}}}} <span class="article-label">page views</span> </p>
+        </columns>
+        <columns small="6">
+          <p>{{{{raw}}}} {{ temporalArticle2Engagements }} {{{{/raw}}}}<span class="article-label">social engagements</span></p>
+        </columns>
+      </row>
+    </li>
+    {{{{raw}}}}{{/if}}{{{{/raw}}}}
+    {{{{raw}}}}{{#if temporalArticle3Headline }}{{{{/raw}}}}
+    <li>
+      <h6 class="article-title"><a href="{{{{raw}}}}{{{temporalArticle3Link}}}{{{{/raw}}}}">{{{{raw}}}} {{ temporalArticle3Headline }} {{{{/raw}}}}</a></h6>
+      <row class="collapse">
+        <columns small="6" class="article-title">
+          <p>{{{{raw}}}} {{ temporalArticle3Views }} {{{{/raw}}}} <span class="article-label">page views</span> </p>
+        </columns>
+        <columns small="6">
+          <p>{{{{raw}}}} {{ temporalArticle3Engagements }} {{{{/raw}}}}<span class="article-label">social engagements</span></p>
+        </columns>
+      </row>
+    </li>
+    {{{{raw}}}}{{/if}}{{{{/raw}}}}
   </ol>
 
   <row class="collapse">
     <h2 class="section-header">Lifetime</h2>
+  </row>
+  <row class="collapse">
     <columns small="6">
-      <h2 class="stats">{{ pageviews }}</h2>
+      <h2 class="stats">{{{{raw}}}} {{ lifetimeViews }} {{{{/raw}}}}</h2>
       <p class="stats-label">Page Views</p>
-    </columns>    
+    </columns>
 
     <columns small="6">
-      <h2 class="stats">{{ engagements }}</h2>
+      <h2 class="stats">{{{{raw}}}} {{ lifetimeEngagements }} {{{{/raw}}}}</h2>
       <p class="stats-label">Social Engagements</p>
-    </columns>    
+    </columns>
   </row>
+  {{{{raw}}}}{{#if lifetimeArticle1Headline }}{{{{/raw}}}}
   <h5 class="secondary-header">Top Articles</h5>
+  {{{{raw}}}}{{/if}}{{{{/raw}}}}
   <ol>
+    {{{{raw}}}}{{#if lifetimeArticle1Headline }}{{{{/raw}}}}
     <li>
+      <h6 class="article-title"><a href="{{{{raw}}}}{{{lifetimeArticle1Link}}}{{{{/raw}}}}">{{{{raw}}}} {{ lifetimeArticle1Headline }} {{{{/raw}}}}</a></h6>
       <row class="collapse">
-        <h6 class="article-title"><a href="">{{ post.headline }}</a></h6>
         <columns small="6" class="article-title">
-          <p>{{ post.pageviews }} <span class="article-label">page views</span> </p>
+          <p>{{{{raw}}}} {{ lifetimeArticle1Views }} {{{{/raw}}}} <span class="article-label">page views</span> </p>
         </columns>
         <columns small="6">
-          <p>{{ post.engagements }} <span class="article-label">social engagements</span></p>
+          <p>{{{{raw}}}} {{ lifetimeArticle1Engagements }} {{{{/raw}}}}<span class="article-label">social engagements</span></p>
         </columns>
       </row>
     </li>
+    {{{{raw}}}}{{/if}}{{{{/raw}}}}
+    {{{{raw}}}}{{#if lifetimeArticle2Headline }}{{{{/raw}}}}
+    <li>
+      <h6 class="article-title"><a href="{{{{raw}}}}{{{lifetimeArticle2Link}}}{{{{/raw}}}}">{{{{raw}}}} {{ lifetimeArticle2Headline }} {{{{/raw}}}}</a></h6>
+      <row class="collapse">
+        <columns small="6" class="article-title">
+          <p>{{{{raw}}}} {{ lifetimeArticle2Views }} {{{{/raw}}}} <span class="article-label">page views</span> </p>
+        </columns>
+        <columns small="6">
+          <p>{{{{raw}}}} {{ lifetimeArticle2Engagements }} {{{{/raw}}}}<span class="article-label">social engagements</span></p>
+        </columns>
+      </row>
+    </li>
+    {{{{raw}}}}{{/if}}{{{{/raw}}}}
+    {{{{raw}}}}{{#if lifetimeArticle3Headline }}{{{{/raw}}}}
+    <li>
+      <h6 class="article-title"><a href="{{{{raw}}}}{{{lifetimeArticle3Link}}}{{{{/raw}}}}">{{{{raw}}}} {{ lifetimeArticle3Headline }} {{{{/raw}}}}</a></h6>
+      <row class="collapse">
+        <columns small="6" class="article-title">
+          <p>{{{{raw}}}} {{ lifetimeArticle3Views }} {{{{/raw}}}} <span class="article-label">page views</span> </p>
+        </columns>
+        <columns small="6">
+          <p>{{{{raw}}}} {{ lifetimeArticle3Engagements }} {{{{/raw}}}}<span class="article-label">social engagements</span></p>
+        </columns>
+      </row>
+    </li>
+    {{{{raw}}}}{{/if}}{{{{/raw}}}}
   </ol>
   {{> footer }}
 </container>
