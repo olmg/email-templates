@@ -87,11 +87,18 @@ p a {
 }
 
 table.button table td {
-  padding: 0 8px;
    
   a {
     font-weight: normal;
-    font-size: 12px;  
+    font-size: 10px;
+    text-align: center;
+    
+    img {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin: 4px auto;
+    }  
   }
 }
 
@@ -99,7 +106,6 @@ table.button table td {
 table.button.facebook table td {
   background: $social-facebook !important;
   border-color: $social-facebook;
-  margin-right: 4px;
 }
 
 table.button.twitter table td {
