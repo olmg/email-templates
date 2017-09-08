@@ -86,10 +86,20 @@ p a {
   }
 }
 
+table.button table td {
+  padding: 0 8px;
+   
+  a {
+    font-weight: normal;
+    font-size: 12px;  
+  }
+}
+
 // Social Media
 table.button.facebook table td {
   background: $social-facebook !important;
   border-color: $social-facebook;
+  margin-right: 4px;
 }
 
 table.button.twitter table td {
@@ -134,3 +144,4 @@ table.button.snapchat table td {
   font-size: 12px;
   color: $odyssey-grey;
 }
+
