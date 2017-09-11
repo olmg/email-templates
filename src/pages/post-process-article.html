@@ -1,0 +1,33 @@
+---
+subject: Odyssey - Article is live
+title: Article is live
+name: Zach Swanson
+liveArticleUrl: https://theodysseyonline.com/10-ways-to-do-10-amazing-things
+creatorArticleUrl: https://creator.theodysseyonline.com/articles/9353953
+articleHeadline: 10 Ways to do 10 Amazing Things
+---
+
+{{> header}}
+
+<container>
+
+  <spacer size="16"></spacer>
+
+  <row>
+    <columns small="12">
+      <h1>Hi, {{{{raw}}}}{{ name }}{{{{/raw}}}}</h1>
+      <p class="lead">Name: {{{{raw}}}}{{ name }}{{{{/raw}}}}</p>
+      <p class="lead">Live Article Url: {{{{raw}}}}{{ liveArticleUrl }}{{{{/raw}}}}</p>
+      <p class="lead">Creator Article Url: {{{{raw}}}}{{ creatorArticleUrl }}{{{{/raw}}}}</p>
+      <p class="lead">Article Headline: {{{{raw}}}}{{articleHeadline }}{{{{/raw}}}}</p>
+    </columns>
+  </row>
+  <spacer size="16"></spacer>
+  <row>
+    <columns small="12">
+      <p class="lead">Thanks,</p>
+      <p class="lead">Team Odyssey</p>
+    </columns>
+  </row>
+  {{> footer }}
+</container>
