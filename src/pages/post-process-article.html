@@ -1,0 +1,32 @@
+---
+subject: "Odyssey: Your article is live"
+title: Article is Live
+name: Zach Swanson
+liveArticleUrl: https://theodysseyonline.com/10-ways-to-do-10-amazing-things
+creatorArticleUrl: https://creator.theodysseyonline.com/articles/9353953
+articleHeadline: 10 Ways to do 10 Amazing Things
+---
+
+{{> header}}
+
+<container>
+
+  <spacer size="16"></spacer>
+
+  <row>
+    <columns small="12">
+      <h1>Hi, {{{{raw}}}}{{ name }}{{{{/raw}}}}</h1>
+      
+      <p class="lead">You article <a href="{{{{raw}}}}{{ liveArticleUrl }}{{{{/raw}}}}">"{{{{raw}}}}{{articleHeadline }}{{{{/raw}}}}"</a> has been posted and is now live.<p class="lead">
+      <p class="lead"><a href="{{{{raw}}}}{{ creatorArticleUrl }}{{{{/raw}}}}">Time to share!</a></p>
+    </columns>
+  </row>
+  <spacer size="16"></spacer>
+  <row>
+    <columns small="12">
+      <p class="lead">Happy creating!</p>
+      <p class="lead">Odyssey HQ</p>
+    </columns>
+  </row>
+  {{> footer }}
+</container>

@@ -1,0 +1,37 @@
+---
+subject: Odyssey - Social share failure
+title: Social share failure
+name: Zach Swanson
+socialProvider: Twitter
+creatorArticleUrl: https://creator.theodysseyonline.com/articles/9353953
+articleHeadline: 10 Ways to do 10 Amazing Things
+---
+
+{{> header}}
+
+<container>
+
+  <spacer size="16"></spacer>
+
+  <row>
+    <columns small="12">
+      <h1>Hi, {{{{raw}}}}{{ name }}{{{{/raw}}}}</h1>
+
+      
+
+      <p class="lead">We had an issue sharing to your post "{{{{raw}}}}{{ articleHeadline }}{{{{/raw}}}}" to {{{{raw}}}}{{ socialProvider }}{{{{/raw}}}}.</p>
+      
+      <p class="lead">First, visit your <a href="https://create.theodysseyonline.com/about#section2">profile</a> and reconnect your {{{{raw}}}}{{ socialProvider }}{{{{/raw}}}} account.</p>
+      
+      <p class="lead">To retry your share, visit your <a href="{{{{raw}}}}{{ creatorArticleUrl }}{{{{/raw}}}}">post</a> and share using the buttons at the top of the page</p>
+    </columns>
+  </row>
+  <spacer size="16"></spacer>
+  <row>
+    <columns small="12">
+      <p class="lead">Thanks,</p>
+      <p class="lead">Odyssey HQ</p>
+    </columns>
+  </row>
+  {{> footer }}
+</container>
