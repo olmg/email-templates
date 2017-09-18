@@ -151,3 +151,12 @@ table.button.snapchat table td {
   color: $odyssey-grey;
 }
 
+.header-img {
+  height: 64px !important;
+  width: auto !important;
+  
+  &--large {
+    height: 48px !important;
+  }
+}
+
