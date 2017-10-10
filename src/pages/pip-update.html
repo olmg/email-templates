@@ -1,9 +1,9 @@
 ---
-subject: Your Odyssey Post is Going Live
-title: Post Going Live
+subject: Uh oh! There was an issue...
+title: Uh oh! There was an issue...
 name: Courtney
-pageviews: "1.2m"
-engagements: "30.3k"
+articleHeadline: 10 Ways To Do 10 Amazing Things
+liveArticleUrl: https://theodysseyonline.com/10-ways-to-do-10-amazing-things
 ---
 
 {{> header}}
@@ -11,11 +11,12 @@ engagements: "30.3k"
 <container>
 
   <spacer size="16"></spacer>
-  
+
   <row>
     <columns small="12">
-      <h1>Hi, {{ name }}</h1>
-      <p class="lead">Your post <a href="https://create.theodysseyonline.com/posts">A Solar Eclipse Is Coming</a> is taking longer to post than we hoped. Wish it luck on its voyage through the tubes. It will be posted soon.</p>
+      <h1>Hi, {{{{raw}}}}{{ name }}{{{{/raw}}}}</h1>
+      <p class="lead">Your post <a href="{{{{raw}}}}{{liveArticleUrl}}{{{{/raw}}}}">{{{{raw}}}}{{ articleHeadline }}{{{{/raw}}}}</a> is taking longer to post than usual. Wish it luck on its voyage through the tubes. It will be posted soon.</p>
+      <p>If you do not receive an update within an hour, please <a href="https://theodyssey.atlassian.net/servicedesk/customer/portal/7">submit a support ticket</a>.</p>
     </columns>
   </row>
   {{> footer }}
